@@ -96,6 +96,7 @@ body {
 @keyframes pulse  { 0%,100%{opacity:1} 50%{opacity:0.3} }
 @keyframes float  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
 
+
 /* ══ PAGE HERO ══ */
 #page-hero {
   position: relative;
@@ -108,7 +109,7 @@ body {
   position: absolute; inset: 0;
   background-image:
     linear-gradient(to right, rgba(10,15,30,0.97) 45%, rgba(10,15,30,0.65) 100%),
-    url('https://images.unsplash.com/photo-1581009137042-c552e485697a?w=1600&q=80');
+    url('../img/banner.png');
   background-size: cover;
   background-position: center;
 }
@@ -580,6 +581,35 @@ body {
 .cta-text p  { color:rgba(255,255,255,0.75); font-size:17px; }
 .cta-actions { display:flex; gap:16px; flex-wrap:wrap; }
 
+/* ══ FOOTER ══ */
+footer { background:var(--navy-light); padding:80px 0 0; border-top:1px solid rgba(255,255,255,0.05); }
+.footer-grid {
+  display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:60px; padding-bottom:60px;
+}
+.footer-brand p { font-size:14px; color:rgba(255,255,255,0.4); line-height:1.8; margin-top:16px; max-width:300px; }
+.footer-col h4 {
+  font-family:'Barlow Condensed',sans-serif; font-size:13px; letter-spacing:3px;
+  text-transform:uppercase; color:var(--white); margin-bottom:20px;
+}
+.footer-col ul { list-style:none; display:flex; flex-direction:column; gap:10px; }
+.footer-col ul a { font-size:14px; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s; }
+.footer-col ul a:hover { color:var(--orange); }
+.contact-items { display:flex; flex-direction:column; gap:12px; }
+.contact-item { display:flex; align-items:flex-start; gap:10px; font-size:14px; color:rgba(255,255,255,0.4); }
+.contact-item svg { width:16px; height:16px; stroke:var(--orange); fill:none; stroke-width:1.8; flex-shrink:0; margin-top:2px; }
+.social-row { display:flex; gap:10px; margin-top:20px; }
+.social-btn { width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); border-radius:2px; display:flex; align-items:center; justify-content:center; transition:all 0.25s; }
+.social-btn:hover { border-color:var(--orange); background:var(--orange); }
+.social-btn svg { width:16px; height:16px; stroke:rgba(255,255,255,0.5); fill:none; stroke-width:1.8; transition:stroke 0.25s; }
+.social-btn:hover svg { stroke:var(--white); }
+.footer-bottom {
+  border-top:1px solid rgba(255,255,255,0.06); padding:24px 0;
+  display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
+}
+.footer-bottom p { font-size:13px; color:rgba(255,255,255,0.25); }
+.footer-legal { display:flex; gap:24px; }
+.footer-legal a { font-size:13px; color:rgba(255,255,255,0.25); text-decoration:none; transition:color 0.2s; }
+.footer-legal a:hover { color:var(--orange); }
 
 /* ══ RESPONSIVE ══ */
 @media (max-width:1100px) {

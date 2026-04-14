@@ -8,18 +8,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style/nav.css">
 <link rel="stylesheet" href="style/serivce.css">
-<link rel="stylesheet" href="style/footer.css">
 <style>
-
 </style>
 </head>
 <body>
-
-<!-- LOADER -->
-<div id="loader">
-  <div class="loader-logo">CIRCINUS <span>SPORTS</span></div>
-  <div class="loader-bar"><div class="loader-fill"></div></div>
-</div>
 
 <!-- NAVBAR -->
 <nav id="navbar">
@@ -27,7 +19,7 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <div class="logo-icon">
-          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <svg class="logo-star" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
             <polygon points="50,5 61,35 95,35 68,57 79,91 50,70 21,91 32,57 5,35 39,35" fill="white"/>
             <polygon points="50,22 57,44 80,44 62,57 69,79 50,67 31,79 38,57 20,44 43,44" fill="#e86000"/>
           </svg>
@@ -37,15 +29,18 @@
           <span class="sub">Sports · Global Trade</span>
         </div>
       </a>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Product</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a href="contact.html" class="btn btn-primary nav-cta">Get Quote</a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+
+      <a href="contact.html" class="nav-cta">Get Quote</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -54,13 +49,15 @@
 
 <!-- MOBILE MENU -->
 <div class="mobile-overlay" id="overlay"></div>
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <a href="index.html" class="mob-link">Home</a>
   <a href="about.html" class="mob-link">About</a>
-  <a href="products.html" class="mob-link">Products</a>
   <a href="services.html" class="mob-link">Services</a>
+  <a href="products.html" class="mob-link">Product</a>
   <a href="contact.html" class="mob-link">Contact</a>
 </div>
+
+
 
 <!-- ═══ PAGE HERO ═══ -->
 <section id="page-hero">
@@ -74,9 +71,7 @@
         <span class="current">Services</span>
       </div>
       <h1 class="page-hero-title">WHAT WE<br><em>OFFER</em> FOR<br>YOUR BRAND</h1>
-      <p class="page-hero-sub">
-        From first sketch to your customer's hands — Circinus Sports delivers end-to-end custom sportswear manufacturing, private labeling, and global shipping.
-      </p>
+
       <div class="hero-pills">
         <span class="hero-pill">Custom Manufacturing</span>
         <span class="hero-pill">Private Label</span>
