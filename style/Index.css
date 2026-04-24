@@ -142,53 +142,6 @@ body {
 .delay-5 { transition-delay: 0.5s; }
 
 /* ════════════════════════════════
-   LOADER
-════════════════════════════════ */
-#loader {
-  position: fixed;
-  inset: 0;
-  background: var(--navy);
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-#loader.gone {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.loader-logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px;
-  color: var(--white);
-  letter-spacing: 4px;
-}
-.loader-logo span { color: var(--orange); }
-
-.loader-bar {
-  width: 200px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 1px;
-  overflow: hidden;
-}
-.loader-fill {
-  height: 100%;
-  background: var(--orange);
-  border-radius: 1px;
-  animation: load 1.4s var(--ease) forwards;
-}
-@keyframes load {
-  from { width: 0; }
-  to   { width: 100%; }
-}
-
-/* ════════════════════════════════
    HERO  ← MAIN FIX
 ════════════════════════════════ */
 #hero {
