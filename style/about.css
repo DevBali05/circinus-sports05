@@ -166,7 +166,7 @@ body {
   inset: 0;
   background-image:
     linear-gradient(to right, rgba(10, 15, 30, 0.97) 50%, rgba(10, 15, 30, 0.7) 100%),
-    url('../img/banner.png');
+    url('../img/banner.webp');
   background-size: cover;
   background-position: center;
 }
@@ -332,7 +332,7 @@ body {
   width: 100%;
   aspect-ratio: 3/4;
   max-height: 580px;
-  background: url('../img/intro.png') center/cover;
+  background: url('../img/intro.webp') center/cover;
   border-radius: 2px;
 }
 
@@ -342,7 +342,7 @@ body {
   right: -40px;
   width: 56%;
   aspect-ratio: 4/3;
-  background: url('https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?w=600&q=80') center/cover;
+  background: url('../img/logo.webp') center/cover;
   border-radius: 2px;
   border: 6px solid var(--white);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);

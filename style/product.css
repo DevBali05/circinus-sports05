@@ -100,7 +100,7 @@ body {
   inset: 0;
   background-image:
     linear-gradient(to right, rgba(10,15,30,0.97) 50%, rgba(10,15,30,0.7) 100%),
-    url('../img/banner.png');
+    url('../img/banner.webp');
   background-size: cover;
   background-position: center;
 }

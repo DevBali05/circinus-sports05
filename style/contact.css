@@ -54,7 +54,7 @@ body {
   inset: 0;
   background-image:
     linear-gradient(to right, rgba(10,15,30,0.95) 40%, rgba(10,15,30,0.6) 100%),
-    url('../img/banner.png');
+    url('../img/banner.webp');
   background-size: cover;
   background-position: center;
 }
